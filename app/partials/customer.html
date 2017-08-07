@@ -1,0 +1,109 @@
+<div class="container" ng-form="customerForm">
+    <h4 class="bold">{{pageTitle}} cliente</h4>
+    <br/><br/>
+    <div class="row">
+        <div class="col-xs-12 col-md-12 col-lg-6">
+            <div class="edit-item-row">
+                <div class="edit-item-container" ng-class="{'error': !customerForm.nome.$pristine && customerForm.nome.$invalid}">
+                    <div class="edit-item">
+                        <span class="cs-item-field-label">nome</span>
+                        <input ng-input ng-model="vm.customer.nome" ng-required="true" name="nome" />
+                    </div>
+                    <div class="input-error ng-hide" ng-show="!customerForm.nome.$pristine && customerForm.nome.$invalid">
+                        <p>campo obrigatório.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-xs-12 col-md-12 col-lg-6">
+            <div class="edit-item-row">
+                <div class="edit-item-container" ng-class="{'error': !customerForm.email.$pristine && customerForm.email.$invalid}">
+                    <div class="edit-item">
+                        <span class="cs-item-field-label">e-mail</span>
+                        <input ng-input ng-model="vm.customer.email" ng-required="true" name="email" type-mask="email"/>
+                    </div>
+                    <div class="input-error ng-hide" ng-show="!customerForm.email.$pristine && customerForm.email.$invalid">
+                        <p>campo obrigatório.</p>
+                        <p ng-show="customerForm.email.$error.mask">email inválido.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-md-6 col-lg-6">
+            <div class="edit-item-row">
+                <div class="edit-item-container" ng-class="{'error': !customerForm.endereco.$pristine && customerForm.endereco.$invalid}">
+                    <div class="edit-item">
+                        <span class="cs-item-field-label">endereço</span>
+                        <input ng-input ng-model="vm.customer.endereco" ng-required="true" name="endereco" />
+                    </div>
+                    <div class="input-error ng-hide" ng-show="!customerForm.endereco.$pristine && customerForm.endereco.$invalid">
+                        <p>campo obrigatório.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-6">
+            <div class="edit-item-row">
+                <div class="edit-item-container" ng-class="{'error': !customerForm.bairro.$pristine && customerForm.bairro.$invalid}">
+                    <div class="edit-item">
+                        <span class="cs-item-field-label">bairro</span>
+                        <input ng-input ng-model="vm.customer.bairro" ng-required="true" name="bairro" />
+                    </div>
+                    <div class="input-error ng-hide" ng-show="!customerForm.bairro.$pristine && customerForm.bairro.$invalid">
+                        <p>campo obrigatório.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-md-6 col-lg-4">
+            <div class="edit-item-row">
+                <div class="edit-item-container" ng-class="{'error': !customerForm.cidade.$pristine && customerForm.cidade.$invalid}">
+                    <div class="edit-item">
+                        <span class="cs-item-field-label">cidade</span>
+                        <input ng-input ng-model="vm.customer.cidade" ng-required="true" name="cidade" />
+                    </div>
+                    <div class="input-error ng-hide" ng-show="!customerForm.cidade.$pristine && customerForm.cidade.$invalid">
+                        <p>campo obrigatório.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-4">
+            <div class="edit-item-row">
+                <div class="edit-item-container" ng-class="{'error': !customerForm.estado.$pristine && customerForm.estado.$invalid}">
+                    <div class="edit-item">
+                        <span class="cs-item-field-label">estado</span>
+                        <input ng-input ng-model="vm.customer.estado" ng-required="true" name="estado" maxlength="2" />
+                    </div>
+                    <div class="input-error ng-hide" ng-show="!customerForm.estado.$pristine && customerForm.estado.$invalid">
+                        <p>campo obrigatório.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-4">
+            <div class="edit-item-row">
+                <div class="edit-item-container" ng-class="{'error': !customerForm.telefone.$pristine && customerForm.telefone.$invalid}">
+                    <div class="edit-item">
+                        <span class="cs-item-field-label">telefone</span>
+                        <input ng-input ng-model="vm.customer.telefone" ng-required="true" name="telefone" type-mask="tel2" />
+                    </div>
+                    <div class="input-error ng-hide" ng-show="!customerForm.telefone.$pristine && customerForm.telefone.$invalid">
+                        <p>campo obrigatório.</p>
+                        <p ng-show="customerForm.telefone.$error.mask">número inválido.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br/><br/>
+    <div class="col-xs-12">
+        <button class="col-xs-offset-0 btn btn-default" ng-click="fn.goBack()">cancelar</button>
+        <button class="pull-right btn btn-primary" ng-click="fn.addCustomer()">confirmar</button>
+    </div>
+</div>

@@ -1,0 +1,54 @@
+
+body {
+    font-family: sans-serif;
+
+    nav#mainNav{
+        background-color: white !important;
+        height: 95px;
+    
+        h2{
+            padding: 15px;
+            padding-right: 0;
+            font-size: 25px;
+            font-weight: bold;
+            color: #1365b1;
+            text-align: right;
+        }
+
+        .container{
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    input {
+        padding: 8px 0;
+        box-shadow: none;
+        border: none;
+        border-bottom: 1px solid #bbb;
+        width: 100%;
+
+        &:focus{
+            outline: none;
+        }
+    }
+
+    .main-content{
+        top: 125px;
+        position: relative;
+    }
+
+    div{ 
+        &.edit-item-row{
+            margin: 15px 0;
+        }
+    }
+
+    .bold{
+        font-weight: bold;
+    }
+}
+
+.block-ui-message{
+    background-color: #1465b1 !important;
+}

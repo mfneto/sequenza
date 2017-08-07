@@ -1,0 +1,11 @@
+<div class="edit-item">  
+    <span class="cs-item-field-label">{{ textLabel }}</span>
+    <input  type="text"
+            ng-model="ngModel"
+            ng-style="maxHeight && {'max-height': maxHeight}"
+            ng-disabled="disabled"
+            ng-required="{{ ngRequired }}"
+            ng-keypress="fn.changeEvent($event)"
+            ng-blur="fn.changeEvent($event)"
+    />
+</div>

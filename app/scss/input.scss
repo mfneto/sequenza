@@ -1,0 +1,68 @@
+.edit-item {
+  border-bottom: 1px solid #353230;
+  padding: 10px 0;
+  margin-top: 30px;
+  position: relative; 
+
+  input {
+    border: 0;
+    width: 100%;
+    font-size: 14px;
+    height: 24px; 
+  }
+
+  .cs-item-field-label {
+    font-family: "opensans-regular", Sans-serif;
+    font-size: 14px;
+    margin: 5px 0;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    color: #353230; 
+
+    &.on-focus {
+      top: -15px;
+      font-family: "opensans-bold", Sans-serif;
+      font-size: 14px;
+      color: #353230; 
+      font-weight: bold;
+    }
+  }
+
+  &:first-child .edit-item-title {
+    margin-top: 0; 
+  }
+}
+
+input.input-error.ng-invalid.ng-dirty{
+  border: 1px solid #f34235;
+  color: #f34235; 
+}
+
+.input-error {
+  color: #e84438;
+  margin-top: 3px;
+  font-family: "opensans-bold", Sans-serif;
+  font-size: 12px;
+  min-height: 17px; 
+  font-weight: bold;
+
+  span {
+    display: none; 
+  }
+}
+
+
+.error{
+  .input-error span {
+    display: block; 
+  }
+
+  .edit-item{
+    border-color: #e84438;
+  
+    input {
+      border-color: #e84438; 
+    }
+  }
+} 

@@ -1,0 +1,30 @@
+{
+  "name": "sequenza",
+  "description": "Front to Sequenza API Client",
+  "main": "index.js",
+  "authors": [
+    "Mario Neto"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/mfneto/sequenza",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.5",
+    "angular-animate": "^1.6.5",
+    "angular-route": "^1.6.5",
+    "jquery": "^3.2.1",
+    "animate.css": "^3.5.2",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "fontawesome#^4.7.0",
+    "angular-bootstrap": "^2.5.0",
+    "angular-ui": "^0.4.0",
+    "angular-confirm": "angular1-confirm#^1.1.0",
+    "angular-block-ui": "^0.2.2"
+  }
+}
