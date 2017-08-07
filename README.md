@@ -18,20 +18,22 @@ bower install
 
 # Tasks Gulp
 
-## Build do projeto
+## Build  do Projeto
+
+Para apenas o build do projeto utilize a task `build`:
+```js
+gulp build
+```
+
+## Teste do Projeto
 
 Para rodar o projeto localmente com um servidor de teste utilize a task `run`:
 ```js
 gulp run
 ```
 
-Obs: Este Irá Abrir montar um http-server da pasta dist na porta :8888
+Obs: Este Irá montar um http-server da pasta dist na porta :8888
 
-
-Para apenas o build do projeto utilize a task `build`:
-```js
-gulp build
-```
 
 ## Informações Específicas do Build (Gulp)
 
@@ -40,4 +42,4 @@ O processo de build irá gerar os arquivos na pasta `dist`, seguindo os passos a
 2. Cópia das bibliotecas externas para a pasta `dist/lib` (com todas suas dependências)
 3. Geração dos arquivos necessários compilados (versões originais, minificadas e seus respectivos sourcemaps) nas pastas /js e /css. (com todas suas dependencias).
 
-O processo que "starta" o http-server (run) realiza o item anterior e já mapeia o servidor na porta :8888
+O processo que monta o http-server (run) realiza o item anterior e já mapeia o servidor na porta :8888
