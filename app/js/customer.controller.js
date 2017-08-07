@@ -41,7 +41,6 @@
 
                 if ($scope.vm.customer.id > 0) {
                     $apiService.updateCustomer($scope.vm.customer).then(function (res) {
-                        debugger;
                         if (res && res.id > 0) {
                             $modalService.showAlertModal("Cliente atualizado com sucesso!");
                             $location.path('/');
@@ -51,7 +50,6 @@
                     });
                 } else {
                     $apiService.addCustomer($scope.vm.customer).then(function (res) {
-                        debugger;
                         if (res && res.id > 0) {
                             $modalService.showAlertModal("Cliente inserido com sucesso!");
                             $location.path('/');
